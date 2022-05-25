@@ -11,7 +11,7 @@ s = "MIV"
 i=0
 conv = 0 
 for i in range (len(s)-1):
-    if (i>0 and roms[s[i]]<roms[s[i+1]]):
+    if (roms[s[i]]<roms[s[i+1]]):
         conv -= roms[s[i]]
     else:
         conv += roms[s[i]]
